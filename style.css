@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #75abc4, #cce7ff);
+  background: linear-gradient(to right, #e5e1e9, #c2e9fb);
   text-align: center;
 }
 .galeria {
@@ -12,37 +12,57 @@ body {
 }
 
 .galeria img {
-  width: 150px;
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 12px;
 }
 
 .container {
-  padding: 40px;
+  padding: 30px 20px;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}c
+
 h1 {
-  color: #ad0d0d;
+  font-size: 23px;
+  font-weight: 500;
+  color: #b91c1c;
 }
 
 .mensagem {
-  font-size: 18px;
-  margin: 20px 0;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
 }
 
 .foto {
-  width: 250px;
-  border-radius: 15px;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 button {
-  background-color: #f00c3e;
+  background: #f43f5e;
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e11d48;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 button:hover {
@@ -67,4 +87,18 @@ button:hover {
     transform: translateY(100vh);
     opacity: 0;
   }
+}
+.galeria {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.foto {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+body {
+  font-family: 'Poppins', sans-serif;
 }
